@@ -153,10 +153,13 @@ address {
 }
 .skills-list {
   display: flex;
-  gap: 28px;
+  gap: 24px;
+}
+.skills-list:first-child {
+  width: calc((100% - 72px) / 4);
 }
 .skills-title {
-  visibility: hidden;
+  margin-bottom: 8px;
 }
 .skills-subtitle {
   color: #2e2f42;
@@ -185,6 +188,9 @@ address {
   text-align: center;
   border-radius: 0 0 4px 4px;
 }
+.team-item-info {
+  padding: 32px 0;
+}
 .team-img {
   margin-bottom: 32px;
 }
@@ -206,6 +212,7 @@ address {
   line-height: 1.2;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
+  text-align: center;
 }
 .team-text {
   background-color: #ffffff;
@@ -213,6 +220,7 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
   margin-bottom: 32px;
+  text-align: center;
 }
 .portfolio {
   padding-top: 120px;
