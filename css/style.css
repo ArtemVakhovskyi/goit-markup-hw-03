@@ -82,6 +82,8 @@ address {
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.02em;
+  padding: 24px 0;
+  display: block;
 }
 .header-nav-link:active {
   text-decoration: underline#404BBF;
@@ -155,11 +157,22 @@ address {
   display: flex;
   gap: 24px;
 }
-.skills-list:first-child {
+.skills-list-item {
   width: calc((100% - 72px) / 4);
 }
-.skills-title {
-  margin-bottom: 8px;
+
+.skills-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .skills-subtitle {
   color: #2e2f42;
@@ -167,7 +180,7 @@ address {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 .skills-text {
   font-size: 16px;
