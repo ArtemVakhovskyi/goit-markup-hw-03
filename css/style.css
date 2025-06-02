@@ -47,7 +47,6 @@ address {
 }
 .header {
   border-bottom: 1px solid #e7e9fc;
-  padding: 24px 0;
 }
 .header-nav {
   display: flex;
@@ -73,6 +72,8 @@ address {
   text-transform: uppercase;
   color: #4d5ae5;
   display: inline-block;
+}
+.header-logo {
   margin-right: 76px;
 }
 
@@ -95,16 +96,16 @@ address {
   display: flex;
   gap: 40px;
 }
-.header-contact-item {
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
+
 .header-contact-link {
   color: #434455;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.02em;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: block;
 }
 .header-address {
   font-style: normal;
@@ -200,12 +201,10 @@ address {
   background-color: #ffffff;
   text-align: center;
   border-radius: 0 0 4px 4px;
+  width: calc((100% - 24px * 3) / 4);
 }
 .team-item-info {
   padding: 32px 0;
-}
-.team-img {
-  margin-bottom: 32px;
 }
 .team-title {
   text-transform: capitalize;
@@ -232,7 +231,6 @@ address {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-bottom: 32px;
   text-align: center;
 }
 .portfolio {
@@ -279,7 +277,6 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  padding-bottom: 32px;
 }
 
 .portfolio-line {
